@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ccffff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.yannie.calorieconverter2.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calorieText"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        android:textColor="#595959"
+        android:textSize="25dp"
+        android:text="CALORIE EXPENSE: " />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calorie"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="245dp"
+        android:textColor="#ff1a75"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:text="0" />
+
+    <EditText
+        android:id="@+id/calorieEdit"
+        android:text=""
+        android:textSize="25dp"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="245dp"
+        android:inputType="number"
+        android:onClick="calorieActive" />
+
+    <Button
+        android:text="Enter"
+        android:textSize="30dp"
+        android:shadowColor="#cccccc"
+        android:textColor="#8c8c8c"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:id="@+id/enter"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="470dp"
+        android:onClick="convertFields" />
+
+    <Button
+        android:text="Clear"
+        android:textSize="30dp"
+        android:shadowColor="#cccccc"
+        android:textColor="#8c8c8c"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:id="@+id/clear"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="470dp"
+        android:onClick="clearFields"/>
+
+    <ImageView
+        android:src="@drawable/pushup"
+        android:layout_width="170dp"
+        android:layout_height="160dp"
+        android:id="@+id/pushup"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="40dp" />
+
+    <ImageView
+        android:src="@drawable/situp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/situp"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="42dp" />
+
+    <ImageView
+        android:src="@drawable/jumpingjack"
+        android:layout_width="170dp"
+        android:layout_height="157dp"
+        android:id="@+id/jumpingjack"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="230dp" />
+
+    <ImageView
+        android:src="@drawable/jog"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/jog"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="240dp" />
+
+    <TextView
+        android:text="REPS"
+        android:textSize="18dp"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:id="@+id/pushUpUnit"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="190dp" />
+
+    <TextView
+        android:text="REPS"
+        android:textSize="18dp"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:id="@+id/sitUpUnit"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="190dp" />
+
+    <TextView
+        android:text="MINS"
+        android:textSize="18dp"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:id="@+id/jackUnit"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="400dp" />
+
+    <TextView
+        android:text="MINS"
+        android:textSize="18dp"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:id="@+id/jogUnit"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="265dp"
+        android:layout_marginTop="400dp" />
+
+    <EditText
+        android:id="@+id/pushUpEdit"
+        android:text=""
+        android:textSize="25dp"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="165dp"
+        android:inputType="number"
+        android:onClick="pushUpActive" />
+
+    <EditText
+        android:id="@+id/sitUpEdit"
+        android:text=""
+        android:textSize="25dp"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="178dp"
+        android:layout_marginTop="165dp"
+        android:inputType="number"
+        android:onClick="sitUpActive" />
+
+    <EditText
+        android:id="@+id/jackEdit"
+        android:text=""
+        android:textSize="25dp"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="380dp"
+        android:inputType="number"
+        android:onClick="jackActive" />
+
+    <EditText
+        android:id="@+id/jogEdit"
+        android:text=""
+        android:textSize="25dp"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="178dp"
+        android:layout_marginTop="380dp"
+        android:inputType="number"
+        android:onClick="jogActive" />
+
+    <TextView
+        android:text="pushUpView"
+        android:textSize="30dp"
+        android:textColor="#ff1a75"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/pushUpView"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="187dp" />
+
+    <TextView
+        android:text="sitUpView"
+        android:textSize="30dp"
+        android:textColor="#ff1a75"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/sitUpView"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="185dp"
+        android:layout_marginTop="187dp" />
+
+    <TextView
+        android:text="jackView"
+        android:textSize="30dp"
+        android:textColor="#ff1a75"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/jackView"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="395dp" />
+
+    <TextView
+        android:text="jogView"
+        android:textSize="30dp"
+        android:textColor="#ff1a75"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/jogView"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="185dp"
+        android:layout_marginTop="395dp" />
+
+</RelativeLayout>
