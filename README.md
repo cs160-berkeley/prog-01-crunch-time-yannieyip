@@ -25,3 +25,5 @@ Screen 4 (clicked clear): https://drive.google.com/file/d/0B7sT5zFIK3wcS1dJY2dmY
 ## Acknowledgments
 
 The exercise icons in the application are from Google image search.
+
+## Github link to repo (https://github.com/cs160-sp16/prog-01-crunch-time-yannieyip)
